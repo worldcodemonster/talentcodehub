@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 export function useTheme() {
   const [theme, setTheme] = useState(() => {
     try {
-      return localStorage.getItem('tch-theme') || 'dark';
+      return localStorage.getItem('tch-theme') || 'light';
     } catch {
       return 'dark';
     }
